@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Title bro</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+    </head>
+        <body>
+    <!-- Strong and em(emphasis) elements -->
+<p> <strong>Lorem ipsum dolor sit </strong>
+    amet consectetur adipisicing elit. 
+    Enim porro iste sint itaque minima, 
+    facere cumque exercitationem necessitatibus cum
+    <em> impedit optio dolores aperiam odio saepe quo maiores repudiandae!</em> Eius, nemo.</p>
+    <!--Special Characters-->
+    <h1>Copyright &copy; &#174;</h1>
+            <h1 style="font-size: 5vw;">This is tarun</h1> 
+            <!-- //view changes based on window screen -->
+            <h2> Coding addict is good</h2> 
+            <p>Still in basics</p>
+            <p>Im trying to check the length og the page with this text using paragraph element 
+            by typign quickly</p>
+            <h2>Hoola        babay</h2>
+            <!--Html ignores too many spaces-->
+<p>In this crash course I will cram as <strong>much</strong> about HTML that I can. This is meant for <em>absolute</em> beginners. If you are interested in learning HTML but know nothing, then you are in the right place.<a href="https://www.youtube.com/channel/UC29ju8bIPH5as8OGnQzwJyA" target="_blank">We</a>  will be creating a cheat sheet with all of the common HTML5 tags, attributes, semantic markup, etc. We will not be focusing on CSS in this video. The CSS crash course will be released shortly after</p>
+    <p>To open link in new page use _blank as target</p>
+            <p>Tags need attributes for adding css or any links to certain text example like href is for links</p>
+            <p>forms have action as to save data in which php file and method is get or post type request</p>
+            <br>
+            <hr>
+            
+           <form action="process.php" method="post">
+               <div>
+               <label>First Name</label>
+               <input type ="text" name="fname">
+                   if you use value="enter name" then its not gonna go simply. so, use placeholder seee ex
+                   </div>
+               <br>
+               <div>
+               <label>First Name</label>
+               <input type ="text" name="fname" placeholder="enter your name">
+                   
+                   </div>
+               <br>
+               <div>
+                <label>Last Name</label>
+               <input type ="text" name="lname"><!--type text is normal for entering data -->
+                   </div>
+               <br>
+               <div>
+                <label>Email</label>
+               <input type ="email" name="emaill"><!--type email has some validation check-->
+                   </div>
+                <br>
+               <div>
+                <label>Message/Your Note</label>
+                   <textarea name="message"></textarea>
+                   </div>
+               <div>
+                <label>Gender</label><!--select list-->
+                   <select name="gender">
+                   <option value="male">Hush</option>
+                   <option value="female">Sush</option>
+                   <option value="Bush">Bush</option></select>
+                   </div>
+                <br>
+               <div>
+                <label>Age</label>
+                   <input type="number" name="age" value="30"><!--html5 standards-->
+                   </div>
+                <br>
+               <div>
+                <label>Birthday</label>
+                   <input type="date" name="bday" ><!--html5 standards-->
+               </div>
+               <input type="submit" name="submittoPHP" value="Submit">
+               value is the word which will be seen on your html page! when clicked it gets submitted to php file
+               
+            </form>
+            <button>This is also a button</button>
+            This can be used for JS.
+            <br>
+            <blockquote cite="traversymedia.com">This is a Quotation </blockquote>
+            <p>Full Form of <abbr title="Bevarse Yedava Ellipo">BYE</abbr>?</p>
+            here i used A tag click to know why? <br>
+            <a target="_blank" href="images/bhai.jpg">
+            <img src="images/insta.jpg" alt="mypic" id="img" width="200px" height="auto"> </a>
+            <!-- Lists-->
+            <ul> un ordered list    
+            <li> Item 1</li>
+                <li> Item 2</li>
+                <li> Item 3</li>
+                
+            </ul>
+            <ol> ordered list
+            <li> Item 1</li>
+            <li> Item 2</li>
+            <li> Item 3</li>
+            </ol>
+            <table>
+                <thead><tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>age</th>
+                    </tr></thead>
+                <tbody>
+                <tr>
+                    <td>Tarun</td>
+                    <td>Horizon</td>
+                    <td>22</td>
+                    </tr>
+                    <tr>
+                    <td>Sush</td>
+                    <td>Horizons</td>
+                    <td>26</td>
+                        
+                    </tr>
+                    <tr>
+                    <td>Dex</td>
+                    <td>DOta</td>
+                    <td>25</td>
+                    </tr>
+                </tbody>
+            
+            </table>
+            
+            <p id="demo"></p>
+<p id="loca" > Do you know where you at ?</p>
+<button onclick="getLocation()"> Click to Find!</button>
+<script>
+    var x = document.getElementById("loca");
+    function getLocation() {
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+      } else {
+        x.innerHTML = "Geolocation is not supported by this browser.";
+      }
+    }
+    
+    function showPosition(position) {
+      x.innerHTML = "Latitude: " + position.coords.latitude +
+      "<br>Longitude: " + position.coords.longitude;
+    }
+    </script>
+
+         
+        </body>
+    
+</html>
